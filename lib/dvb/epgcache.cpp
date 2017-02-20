@@ -2245,6 +2245,14 @@ void eEPGCache::channel_data::readFreeSatScheduleOtherData( const uint8_t *data)
 }
 #endif
 
+// BlackHole
+RESULT eEPGCache::Nab_reset_timer()
+{
+eDebug("[EPGC] Funzione Nab Reset Timer Chiamata.");
+channelLastUpdated.clear();
+return -1;
+}
+
 RESULT eEPGCache::lookupEventTime(const eServiceReference &service, time_t t, const eventData *&result, int direction)
 // if t == -1 we search the current event...
 {
