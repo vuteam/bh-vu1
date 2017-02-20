@@ -2,4 +2,4 @@ Enigma2
 
 -----------
 
-OpenESI E2
+BlackHole E2
